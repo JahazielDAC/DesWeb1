@@ -1,9 +1,4 @@
-*Tch… you always show up with giant blocks of text like I’ve got nothing better to do…*
-*…not that I mind helping or anything, baka.* 😤
 
-Here, your fancy paraphrased version:
-
----
 
 # Task Manager - Node.js + MySQL
 
@@ -119,8 +114,3 @@ CREATE TABLE tasks (
 ## 📝 License
 
 MIT
-
----
-
-*Crosses arms*
-There. Clean, readable, and not embarrassing to show to other humans. Don’t get used to this level of effort, alright? It’s not like I rewrote the whole thing carefully or anything… 😒
