@@ -1,83 +1,102 @@
+*Tch… you always show up with giant blocks of text like I’ve got nothing better to do…*
+*…not that I mind helping or anything, baka.* 😤
+
+Here, your fancy paraphrased version:
+
+---
+
 # Task Manager - Node.js + MySQL
 
-Una aplicación CRUD completa para gestión de tareas con Node.js, Express y MySQL.
+A full CRUD application designed for task management, built using Node.js, Express, and MySQL.
 
-## 🚀 Características
+## 🚀 Features
 
-- ✅ Crear, leer, actualizar y eliminar tareas
-- 🎯 Niveles de prioridad (Low, Medium, High)
-- 💾 Persistencia de datos con MySQL
-- 🔄 API RESTful
-- 📱 Interfaz responsive con Bootstrap
+* ✅ Create, retrieve, update, and delete tasks
+* 🎯 Priority levels available (Low, Medium, High)
+* 💾 Data storage handled through MySQL
+* 🔄 RESTful API structure
+* 📱 Responsive interface powered by Bootstrap
 
-## 📋 Requisitos Previos
+## 📋 Prerequisites
 
-- Node.js (v14 o superior)
-- MySQL Server (v5.7 o superior)
-- npm o yarn
+* Node.js (version 14 or higher)
+* MySQL Server (version 5.7 or higher)
+* npm or yarn
 
-## ⚙️ Instalación
+## ⚙️ Setup
 
-1. **Instalar dependencias:**
+1. **Install dependencies:**
+
 ```bash
 npm install
 ```
 
-2. **Configurar la base de datos:**
-   - Ejecuta el archivo `database.sql` en tu servidor MySQL:
+2. **Set up the database:**
+
+   * Run the `database.sql` file on your MySQL server:
+
 ```bash
 mysql -u root -p < database.sql
 ```
 
-3. **Configurar variables de entorno:**
-   - Copia `.env.example` a `.env`:
+3. **Configure environment variables:**
+
+   * Duplicate `.env.example` and rename it to `.env`:
+
 ```bash
 cp .env.example .env
 ```
-   - Edita `.env` con tus credenciales de MySQL:
+
+* Update the `.env` file with your MySQL credentials:
+
 ```env
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=tu_contraseña
+DB_PASSWORD=your_password
 DB_NAME=task_manager
 PORT=3000
 ```
 
-## 🏃 Ejecución
+## 🏃 Running the Application
 
-**Iniciar solo el servidor API:**
+**Start only the API server:**
+
 ```bash
 npm start
 ```
 
-**Modo desarrollo (con nodemon):**
+**Development mode (using nodemon):**
+
 ```bash
 npm run dev
 ```
 
-El servidor API se ejecuta en `http://localhost:3000`
+The API server will be available at:
+`http://localhost:3000`
 
-**Nota:** El frontend se sirve desde nginx en `http://localhost:8080`
+**Note:** The frontend is served via nginx at:
+`http://localhost:8080`
 
-## 📡 API Endpoints
+## 📡 API Routes
 
-| Método | Endpoint | Descripción |
-|--------|----------|-------------|
-| GET | `/api/tasks` | Obtener todas las tareas |
-| POST | `/api/tasks` | Crear una nueva tarea |
-| PUT | `/api/tasks/:id` | Actualizar una tarea |
-| DELETE | `/api/tasks/:id` | Eliminar una tarea |
+| Method | Endpoint         | Description             |
+| ------ | ---------------- | ----------------------- |
+| GET    | `/api/tasks`     | Retrieve all tasks      |
+| POST   | `/api/tasks`     | Add a new task          |
+| PUT    | `/api/tasks/:id` | Modify an existing task |
+| DELETE | `/api/tasks/:id` | Remove a task           |
 
-### Ejemplo de uso:
+### Example Usage
 
-**Crear tarea:**
+**Create a task:**
+
 ```bash
 curl -X POST http://localhost:3000/api/tasks \
   -H "Content-Type: application/json" \
-  -d '{"title":"Nueva tarea","priority":"High"}'
+  -d '{"title":"New task","priority":"High"}'
 ```
 
-## 🗄️ Estructura de la Base de Datos
+## 🗄️ Database Structure
 
 ```sql
 CREATE TABLE tasks (
@@ -90,13 +109,18 @@ CREATE TABLE tasks (
 );
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **Backend:** Node.js, Express.js
-- **Base de datos:** MySQL
-- **Frontend:** Vanilla JavaScript, Bootstrap 5
-- **Otros:** dotenv, cors, mysql2
+* **Backend:** Node.js, Express.js
+* **Database:** MySQL
+* **Frontend:** Vanilla JavaScript, Bootstrap 5
+* **Other tools:** dotenv, cors, mysql2
 
-## 📝 Licencia
+## 📝 License
 
 MIT
+
+---
+
+*Crosses arms*
+There. Clean, readable, and not embarrassing to show to other humans. Don’t get used to this level of effort, alright? It’s not like I rewrote the whole thing carefully or anything… 😒
