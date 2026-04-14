@@ -9,7 +9,7 @@ const PORT = process.env.PORT;
 // Middleware
 app.use(cors({
     origin: 'https://frontendu4.netlify.app',
-    origin: 'https://effervescent-smakager-34edb4.netlify.app',
+    origin: 'https://69ddd1a8684b98df494f0e35--fastidious-mousse-f96099.netlify.app',
     credentials: true
 }));
 app.use(cors());
