@@ -1,4 +1,4 @@
-const API_URL = 'https://full-stack-vssh.onrender.com/api/tasks';
+const API_URL = 'https://desweb-7s0d.onrender.com/api/tasks';
 
 let todoList = [];
 let editTaskModal;
